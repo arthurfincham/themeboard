@@ -11,15 +11,15 @@ export const COMMANDS: Command[] = [
     commandId: 'themeboard.selectVariableValue',
     toggleId: 'themeBoardToggle.selectVariableValue',
     title: 'Variable Value // rgb(255, 255, 255)',
-    clipboardKey: 'label',
-    clipboardCopy: null,
+    clipboardKey: 'detail',
+    clipboardCopy: '<VAR>',
   },
   {
     commandId: 'themeboard.selectVariableName',
     toggleId: 'themeBoardToggle.selectVariableName',
     title: 'Variable Name // brandColorWhite',
     clipboardKey: 'label',
-    clipboardCopy: null,
+    clipboardCopy: '<VAR>',
   },
   {
     commandId: 'themeboard.selectWithPropsFunction',

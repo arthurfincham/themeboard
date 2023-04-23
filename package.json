@@ -1,7 +1,8 @@
 {
   "name": "themeboard",
   "displayName": "ThemeBoard",
-  "description": "Access variables from your styled theme in the command pallete.",
+  "publisher": "ArthurFincham",
+  "description": "copy theme variables, values and interpolated strings to save time when working with a styled theme",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.77.0"
@@ -13,10 +14,16 @@
     "clipboardWrite"
   ],
   "activationEvents": [
-    "onLanguage:typescript"
+    "onLanguage:typescript",
+    "onLanguage:javascript"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthurfincham/themeboard.git"
+  },
   "main": "./dist/extension.js",
-  "icon": "./resources/logo.png",
+  "icon": "./resources/themeboardLogo.png",
   "contributes": {
     "configuration": {
       "title": "ThemeBoard",
