@@ -5,7 +5,7 @@ import { extractThemeFromFile } from './extraction';
 
 export const createExtensionConfig = (context: vscode.ExtensionContext) => {
   let newCommand = vscode.commands.registerCommand(
-    'easy-styled-theme.openConfig',
+    'themeboard.openConfig',
     () => {
       createConfigQuickPick(context);
     }
@@ -15,7 +15,7 @@ export const createExtensionConfig = (context: vscode.ExtensionContext) => {
 
 const createConfigQuickPick = (context: vscode.ExtensionContext) => {
   const quickPickOptions = {
-    title: `💅 StyledTheme: Config`,
+    title: `💅 ThemeBoard: Config`,
     placeholder: 'Filter Theme here...',
     matchOnDetail: true,
   };

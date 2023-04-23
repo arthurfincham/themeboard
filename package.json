@@ -1,7 +1,7 @@
 {
-  "name": "easy-styled-theme",
-  "displayName": "easy-styled-theme",
-  "description": "Access variables from your styled theme from the command pallete.",
+  "name": "themeboard",
+  "displayName": "ThemeBoard",
+  "description": "Access variables from your styled theme in the command pallete.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.77.0"
@@ -19,29 +19,29 @@
   "icon": "./resources/logo.png",
   "contributes": {
     "configuration": {
-      "title": "StyledTheme",
+      "title": "ThemeBoard",
       "properties": {
-        "styledThemeToggle.selectVariableValue": {
+        "themeBoardToggle.selectVariableValue": {
           "description": "Variable Value // rgb(255, 255, 255)",
           "default": true,
           "type": "boolean"
         },
-        "styledThemeToggle.selectVariableName": {
+        "themeBoardToggle.selectVariableName": {
           "description": "Variable Name // brandColorWhite",
           "default": true,
           "type": "boolean"
         },
-        "styledThemeToggle.selectWithPropsFunction": {
+        "themeBoardToggle.selectWithPropsFunction": {
           "description": "Props Function // ${(props) => props.theme...",
           "default": true,
           "type": "boolean"
         },
-        "styledThemeToggle.selectWithMediaQueryMaxWidth": {
+        "themeBoardToggle.selectWithMediaQueryMaxWidth": {
           "description": "Media Query max-width // @media only screen and...",
           "default": true,
           "type": "boolean"
         },
-        "styledThemeToggle.selectWithMediaQueryMinWidth": {
+        "themeBoardToggle.selectWithMediaQueryMinWidth": {
           "description": "Media Query min-width // @media only screen and...",
           "default": true,
           "type": "boolean"
@@ -50,44 +50,44 @@
     },
     "commands": [
       {
-        "command": "easy-styled-theme.createMasterQuickPick",
+        "command": "themeboard.createMasterQuickPick",
         "title": "All",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.settings",
+        "command": "themeboard.settings",
         "title": "Settings",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.selectVariableValue",
+        "command": "themeboard.selectVariableValue",
         "title": "Variable Value // rgb(255, 255, 255)",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.selectVariableName",
+        "command": "themeboard.selectVariableName",
         "title": "Variable Name // brandColorWhite",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.selectWithPropsFunction",
+        "command": "themeboard.selectWithPropsFunction",
         "title": "Props Function // ${(props) => props.theme...",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.selectWithMediaQueryMaxWidth",
+        "command": "themeboard.selectWithMediaQueryMaxWidth",
         "title": "Media Query max-width // @media only screen and...",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.selectWithMediaQueryMinWidth",
+        "command": "themeboard.selectWithMediaQueryMinWidth",
         "title": "Media Query min-width // @media only screen and...",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       },
       {
-        "command": "easy-styled-theme.openConfig",
+        "command": "themeboard.openConfig",
         "title": "Config",
-        "category": "💅 StyledTheme"
+        "category": "💅 ThemeBoard"
       }
     ]
   },

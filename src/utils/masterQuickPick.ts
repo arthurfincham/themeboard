@@ -4,14 +4,14 @@ import { COMMANDS, Command } from '../commands';
 
 const masterQuickPick = (context: vscode.ExtensionContext) => {
   const quickPickOptions = {
-    title: `💅 StyledTheme: Config`,
+    title: `💅 ThemeBoard: Config`,
     placeholder: 'Filter Theme here...',
     matchOnDetail: true,
   };
   const CONFIG = COMMANDS.map((command) => {
     return {
       label: command.title,
-      detail: '💅 StyledTheme',
+      detail: '💅 ThemeBoard',
       callback: () =>
         createQuickPick(
           context,
@@ -32,7 +32,7 @@ const masterQuickPick = (context: vscode.ExtensionContext) => {
 
 export const createMasterQuickPick = (context: vscode.ExtensionContext) => {
   let newCommand = vscode.commands.registerCommand(
-    'easy-styled-theme.createMasterQuickPick',
+    'themeboard.createMasterQuickPick',
     () => {
       masterQuickPick(context);
     }

@@ -21,7 +21,7 @@ export const createQuickPick = (
 ): any => {
   const themeVariables = getThemeVariables(context);
   const quickPickOptions = {
-    title: `💅 StyledTheme: ${title}`,
+    title: `💅 ThemeBoard: ${title}`,
     ...defaultQuickPickOptions,
   };
   vscode.window
