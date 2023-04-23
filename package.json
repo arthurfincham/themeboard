@@ -1,0 +1,125 @@
+{
+  "name": "easy-styled-theme",
+  "displayName": "easy-styled-theme",
+  "description": "Access variables from your styled theme from the command pallete.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "activationEvents": [
+    "onLanguage:typescript"
+  ],
+  "main": "./dist/extension.js",
+  "icon": "./resources/logo.png",
+  "contributes": {
+    "configuration": {
+      "title": "StyledTheme",
+      "properties": {
+        "styledThemeToggle.selectVariableValue": {
+          "description": "Variable Value // rgb(255, 255, 255)",
+          "default": true,
+          "type": "boolean"
+        },
+        "styledThemeToggle.selectVariableName": {
+          "description": "Variable Name // brandColorWhite",
+          "default": true,
+          "type": "boolean"
+        },
+        "styledThemeToggle.selectWithPropsFunction": {
+          "description": "Props Function // ${(props) => props.theme...",
+          "default": true,
+          "type": "boolean"
+        },
+        "styledThemeToggle.selectWithMediaQueryMaxWidth": {
+          "description": "Media Query max-width // @media only screen and...",
+          "default": true,
+          "type": "boolean"
+        },
+        "styledThemeToggle.selectWithMediaQueryMinWidth": {
+          "description": "Media Query min-width // @media only screen and...",
+          "default": true,
+          "type": "boolean"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "easy-styled-theme.createMasterQuickPick",
+        "title": "All",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.settings",
+        "title": "Settings",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.selectVariableValue",
+        "title": "Variable Value // rgb(255, 255, 255)",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.selectVariableName",
+        "title": "Variable Name // brandColorWhite",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.selectWithPropsFunction",
+        "title": "Props Function // ${(props) => props.theme...",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.selectWithMediaQueryMaxWidth",
+        "title": "Media Query max-width // @media only screen and...",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.selectWithMediaQueryMinWidth",
+        "title": "Media Query min-width // @media only screen and...",
+        "category": "💅 StyledTheme"
+      },
+      {
+        "command": "easy-styled-theme.openConfig",
+        "title": "Config",
+        "category": "💅 StyledTheme"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "extensionFile": "node src/extension.ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.77.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
