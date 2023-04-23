@@ -8,11 +8,11 @@ The extension is designed to work with styled-components, however it can parse a
 
 ### Config
 
-![ThemeBoard Config](resources/themeboardConfig.png)
+![ThemeBoard Config](https://user-images.githubusercontent.com/84075286/233841731-b91b75c6-7969-4b9b-b4af-d0552647816c.png)
 
 ### Commands
 
-![ThemeBoard All](resources/themeboardAll.png)
+![ThemeBoard All](https://user-images.githubusercontent.com/84075286/233841730-98270ae1-06d4-44b7-8417-4d3850e58767.png)
 
 #### Variable Value
 
