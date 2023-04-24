@@ -57,6 +57,11 @@
     },
     "commands": [
       {
+        "command": "themeBoard.showWebview",
+        "title": "Show My Webview",
+        "category": "💅 ThemeBoard"
+      },
+      {
         "command": "themeboard.createMasterQuickPick",
         "title": "All",
         "category": "💅 ThemeBoard"
