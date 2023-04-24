@@ -17,15 +17,18 @@ export const createQuickPick = (
   context,
   title,
   copyProperty,
-  copyString = '<VAR>'
+  copyString = '<VAR>',
+  filter
 ): any => {
   const themeVariables = getThemeVariables(context);
+  const variables = filter !== null ? filter(themeVariables) : themeVariables;
+
   const quickPickOptions = {
     title: `💅 ThemeBoard: ${title}`,
     ...defaultQuickPickOptions,
   };
   vscode.window
-    .showQuickPick(themeVariables, quickPickOptions)
+    .showQuickPick(variables, quickPickOptions)
     .then((selectedVariable: any) => {
       if (selectedVariable) {
         const copy = copyString.replace(

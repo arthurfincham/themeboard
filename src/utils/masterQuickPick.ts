@@ -17,7 +17,8 @@ const masterQuickPick = (context: vscode.ExtensionContext) => {
           context,
           command.title,
           command.clipboardKey,
-          command.clipboardCopy
+          command.clipboardCopy,
+          command.filter
         ),
     };
   });

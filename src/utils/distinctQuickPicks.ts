@@ -19,7 +19,8 @@ const createCommand = (command: Command, context: vscode.ExtensionContext) => {
         context,
         command.title,
         command.clipboardKey,
-        command.clipboardCopy
+        command.clipboardCopy,
+        command.filter
       );
     });
     context.subscriptions.push(newCommand);
